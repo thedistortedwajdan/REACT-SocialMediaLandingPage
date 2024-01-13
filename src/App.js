@@ -11,9 +11,6 @@ function App() {
       <CssBaseline />
       <Box>
         <Navbar />
-        <Feed />
-        <Rightbar />
-        <Sidebar />
       </Box>
     </>
   );
