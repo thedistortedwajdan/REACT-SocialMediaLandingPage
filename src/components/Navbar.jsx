@@ -1,21 +1,19 @@
-import {
-  AppBar,
-  InputBase,
-  styled,
-  Toolbar,
-  Typography,
-  Badge,
-  Box,
-  Avatar,
-  Button,
-  Menu,
-  MenuItem,
-} from "@mui/material";
-import { useState } from "react";
+import AppBar from "@mui/material/AppBar";
+import InputBase from "@mui/material/InputBase";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Badge from "@mui/material/Badge";
+import Box from "@mui/material/Box";
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 import InsertEmoticonRoundedIcon from "@mui/icons-material/InsertEmoticonRounded";
 import SearchIcon from "@mui/icons-material/Search";
 import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
+import { styled } from "@mui/material";
+import { useState } from "react";
 
 const StyledToolbar = styled(Toolbar)({
   display: "flex",

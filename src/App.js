@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Feed from "./components/Feed";
 import Rightbar from "./components/Rightbar";
 import Sidebar from "./components/Sidebar";
-import { Box } from "@mui/material";
+import Box from "@mui/material/Box";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <CssBaseline />
       <Box>
         <Navbar />
+        <Sidebar />
       </Box>
     </>
   );
