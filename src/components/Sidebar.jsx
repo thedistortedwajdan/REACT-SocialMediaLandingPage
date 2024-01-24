@@ -1,20 +1,53 @@
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
 import {
   AccountBox,
   Article,
+  Brightness6,
   Group,
   Person,
   Settings,
   Storefront,
 } from "@mui/icons-material";
+import { Switch } from "@mui/material";
+import CustomListItem from "./CustomListItem";
 
 export default function Sidebar() {
+  const listItems = [
+    {
+      Icon: HomeIcon,
+      text: "Home",
+    },
+    {
+      Icon: Article,
+      text: "Pages",
+    },
+    {
+      Icon: Group,
+      text: "Groups",
+    },
+    {
+      Icon: Storefront,
+      text: "Marketplace",
+    },
+    {
+      Icon: Person,
+      text: "Friends",
+    },
+    {
+      Icon: Settings,
+      text: "Settings",
+    },
+    {
+      Icon: AccountBox,
+      text: "Profile",
+    },
+    {
+      Icon: Brightness6,
+      SwitchProp: Switch,
+    },
+  ];
   return (
     <>
       <Box
@@ -28,62 +61,14 @@ export default function Sidebar() {
         }}
       >
         <List>
-          <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <HomeIcon />
-              </ListItemIcon>
-              <ListItemText primary="Home" />
-            </ListItemButton>
-          </ListItem>
-          <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <Article />
-              </ListItemIcon>
-              <ListItemText primary="Pages" />
-            </ListItemButton>
-          </ListItem>
-          <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <Group />
-              </ListItemIcon>
-              <ListItemText primary="Groups" />
-            </ListItemButton>
-          </ListItem>
-          <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <Storefront />
-              </ListItemIcon>
-              <ListItemText primary="Marketplace" />
-            </ListItemButton>
-          </ListItem>
-          <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <Person />
-              </ListItemIcon>
-              <ListItemText primary="Friends" />
-            </ListItemButton>
-          </ListItem>
-          <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <Settings />
-              </ListItemIcon>
-              <ListItemText primary="Settings" />
-            </ListItemButton>
-          </ListItem>
-          <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <AccountBox />
-              </ListItemIcon>
-              <ListItemText primary="Profile" />
-            </ListItemButton>
-          </ListItem>
+          {listItems.map((item, index) => (
+            <CustomListItem
+              key={index}
+              Icon={item.Icon}
+              text={item.text}
+              SwitchProp={item.SwitchProp}
+            />
+          ))}
         </List>
       </Box>
     </>

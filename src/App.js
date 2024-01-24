@@ -12,6 +12,7 @@ function App() {
       <Box>
         <Navbar />
         <Sidebar />
+        <Feed />
       </Box>
     </>
   );
