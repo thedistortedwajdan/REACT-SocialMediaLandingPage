@@ -50,26 +50,19 @@ export default function Sidebar() {
   ];
   return (
     <>
-      <Box
-        sx={{
-          flexGrow: 1,
-          padding: 2,
-          display: {
-            xs: "none",
-            sm: "flex",
-          },
-        }}
-      >
-        <List>
-          {listItems.map((item, index) => (
-            <CustomListItem
-              key={index}
-              Icon={item.Icon}
-              text={item.text}
-              SwitchProp={item.SwitchProp}
-            />
-          ))}
-        </List>
+      <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
+        <Box position="fixed">
+          <List>
+            {listItems.map((item, index) => (
+              <CustomListItem
+                key={index}
+                Icon={item.Icon}
+                text={item.text}
+                SwitchProp={item.SwitchProp}
+              />
+            ))}
+          </List>
+        </Box>
       </Box>
     </>
   );

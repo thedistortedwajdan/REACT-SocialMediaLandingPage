@@ -4,6 +4,7 @@ import Feed from "./components/Feed";
 import Rightbar from "./components/Rightbar";
 import Sidebar from "./components/Sidebar";
 import Box from "@mui/material/Box";
+import { Stack } from "@mui/material";
 
 function App() {
   return (
@@ -11,8 +12,11 @@ function App() {
       <CssBaseline />
       <Box>
         <Navbar />
-        <Sidebar />
-        <Feed />
+        <Stack direction="row" spacing={2} justifyContent="space-between">
+          <Sidebar />
+          <Feed />
+          <Rightbar />
+        </Stack>
       </Box>
     </>
   );
