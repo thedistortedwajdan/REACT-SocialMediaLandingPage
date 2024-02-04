@@ -13,7 +13,7 @@ import {
 import { Switch } from "@mui/material";
 import CustomListItem from "./CustomListItem";
 
-export default function Sidebar() {
+export default function Sidebar({ mode, setMode }) {
   const listItems = [
     {
       Icon: HomeIcon,
@@ -59,6 +59,8 @@ export default function Sidebar() {
                 Icon={item.Icon}
                 text={item.text}
                 SwitchProp={item.SwitchProp}
+                mode={mode}
+                setMode={setMode}
               />
             ))}
           </List>

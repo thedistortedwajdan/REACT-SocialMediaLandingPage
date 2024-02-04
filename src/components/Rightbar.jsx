@@ -69,16 +69,28 @@ export default function Rightbar() {
           </Typography>
           <ImageList cols={4} gap={5}>
             <ImageListItem>
-              <img src="https://images.pexels.com/photos/2088210/pexels-photo-2088210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+              <img
+                src="https://images.pexels.com/photos/2088210/pexels-photo-2088210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
             </ImageListItem>
             <ImageListItem>
-              <img src="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+              <img
+                src="https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
             </ImageListItem>
             <ImageListItem>
-              <img src="https://images.pexels.com/photos/1266810/pexels-photo-1266810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+              <img
+                src="https://images.pexels.com/photos/1266810/pexels-photo-1266810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
             </ImageListItem>
             <ImageListItem>
-              <img src="https://images.pexels.com/photos/1366630/pexels-photo-1366630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+              <img
+                src="https://images.pexels.com/photos/1366630/pexels-photo-1366630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
             </ImageListItem>
           </ImageList>
           <Typography variant="h6" fontWeight={600}>
@@ -89,7 +101,7 @@ export default function Rightbar() {
               width: "100%",
               maxWidth: 360,
               bgcolor: "background.paper",
-              // alignSelf: "start",
+              borderRadius: "10px",
             }}
           >
             <ListItem alignItems="flex-start">

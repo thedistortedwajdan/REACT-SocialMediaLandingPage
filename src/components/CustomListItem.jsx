@@ -6,7 +6,7 @@ import {
 } from "@mui/material";
 import React from "react";
 
-function CustomListItem({ Icon, text, SwitchProp }) {
+function CustomListItem({ Icon, text, SwitchProp, mode, setMode }) {
   return (
     <>
       <ListItem disablePadding>
@@ -14,7 +14,11 @@ function CustomListItem({ Icon, text, SwitchProp }) {
           <ListItemIcon>
             <Icon />
           </ListItemIcon>
-          {(text && <ListItemText primary={text} />) || <SwitchProp />}
+          {(text && <ListItemText primary={text} />) || (
+            <SwitchProp
+              onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
+            />
+          )}
         </ListItemButton>
       </ListItem>
     </>

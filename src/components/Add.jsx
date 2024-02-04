@@ -25,7 +25,7 @@ export default function Add() {
 
   const style = {
     width: 400,
-    bgcolor: "background.paper",
+    // bgcolor: "background.paper",
     border: "2px solid #1976D2",
     borderRadius: "20px",
     boxShadow: 24,
@@ -60,7 +60,7 @@ export default function Add() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box sx={style} bgcolor={"background.default"} color={"text.primary"}>
           <Typography
             textAlign={"center"}
             variant="h6"
