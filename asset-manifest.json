@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/landingPage-social-media-mui-react/static/js/main.ff38b466.js",
-    "index.html": "/landingPage-social-media-mui-react/index.html",
-    "main.ff38b466.js.map": "/landingPage-social-media-mui-react/static/js/main.ff38b466.js.map"
+    "main.js": "/REACT-SocialMediaLandingPage/static/js/main.ff38b466.js",
+    "index.html": "/REACT-SocialMediaLandingPage/index.html",
+    "main.ff38b466.js.map": "/REACT-SocialMediaLandingPage/static/js/main.ff38b466.js.map"
   },
   "entrypoints": [
     "static/js/main.ff38b466.js"
